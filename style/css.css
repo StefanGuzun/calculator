@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  background-image: url("img/img.png");
+
+}
+
+.number {
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 100px;
+  margin: 5px;
+  outline: none;
+  background-color: dimgray;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 100px;
+  margin: 5px;
+  outline: none;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+.yellow{
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 100px;
+  margin: 5px;
+  outline: none;
+  background-color: darkorange;
+}
+.del{
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 100px;
+  margin: 5px;
+  outline: none;
+  background-color: white;
+}
+.equal{
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 100px;
+  margin: 5px;
+  outline: none;
+  background-color: darkorange;
+}
+.span-two-0 {
+  grid-column: span 2;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 100px;
+  margin: 5px;
+  outline: none;
+  background-color: dimgray;
+}
